@@ -57,15 +57,21 @@ unsigned long int main()
 {
     int N;
     printf("input Number : ");
-    scanf("%d",&N); // รับ N
+    scanf("%u",&N); // รับ N
     Starter = N; // ทดตัวตั้งใน ฟังชัน plus
     Num = reverse(N); // กลับค่า N ใส่ ตัวแปร Num
     Aws = Plus(Num); // เอสเลขกลับค่าไปบวก ได้ aws
     taws = reversetest(Aws); // กลับค่า aws เพื่อเทียบ
 
+    if  (N==Num&&(N!=0))
+    {
+        printf("0 %u",N);
+        return 0;
+    }
+
         if ((N<10)&&(N!=0))
     {
-        printf("0 %d",N);
+        printf("0 %u",N);
         return 0;
     }
 
@@ -79,8 +85,8 @@ unsigned long int main()
             //printf("semiAws is %d\n", semifixaws);
             Aws=Plustest(semifixaws); //นำตัวแปรกลับค่าไปบวก ใส่ aws เหมือนเดิน
             taws = reverseII(Aws); //กลับค่าอีกรอบใส่ taws
-            //printf("Aws is %d\n", Aws);
-            //printf("taws is %d\n", taws);
+            printf("Aws is %u\n", Aws);
+            printf("taws is %u\n", taws);
             //printf("=================\n");
         }           // วน
     }
@@ -96,7 +102,7 @@ unsigned long int main()
             //printf("taws is %d\n", taws);
             //printf("round is %d\n",Round);
             //printf("\n");
-            printf("%d %d",Round, Aws);
+            printf("%u %u",Round, Aws);
         }
 
 
