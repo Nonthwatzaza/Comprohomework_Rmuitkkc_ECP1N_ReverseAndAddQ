@@ -3,7 +3,7 @@
 
 // by Nonthwat zaza @ECP1N Rmuit kkc
 // ReverseAndAddQ Homework code
-// 98.88% code
+// 98.99% code finalver
 long long int SwN=0,Starter=0,Finalnum=0,Num=0,Aws=0,taws=0,SwNtest=0,fixaws=0,semifixaws=0,Finalnumtest=0,SwNII=0,semitaws=0;
 long long int Round=0;
 long long int reverse(long long N)
