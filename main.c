@@ -4,9 +4,9 @@
 // by Nonthwat zaza @ECP1N Rmuit kkc
 // ReverseAndAddQ Homework code
 // 95% code
-unsigned long int SwN=0,Starter=0,Finalnum=0,Num=0,Aws=0,taws=0,SwNtest=0,fixaws=0,semifixaws=0,Finalnumtest=0,SwNII=0,semitaws=0;
-unsigned long int Round=0;
-unsigned long int reverse(unsigned long int N)
+long long int SwN=0,Starter=0,Finalnum=0,Num=0,Aws=0,taws=0,SwNtest=0,fixaws=0,semifixaws=0,Finalnumtest=0,SwNII=0,semitaws=0;
+long long int Round=0;
+long long int reverse(long long N)
 {
             while (N != 0)
             {
@@ -17,7 +17,7 @@ unsigned long int reverse(unsigned long int N)
                 return SwN;
 }
 
-unsigned long int reversetest (unsigned long int N)
+long long int reversetest (long long int N)
 {
             while (N != 0)
             {
@@ -27,9 +27,9 @@ unsigned long int reversetest (unsigned long int N)
             }
                 return SwNtest;
 }
-unsigned long int reverseII(unsigned long int N)
+long long int reverseII(long long int N)
 {
-    unsigned long int SwNII=0;
+    unsigned long long int SwNII=0;
             while (N != 0)
             {
                 SwNII = SwNII * 10;
@@ -39,23 +39,23 @@ unsigned long int reverseII(unsigned long int N)
                 return SwNII;
 }
 
-unsigned long int Plus(unsigned long int Num)
+long long int Plus(long long int Num)
 {
     (Finalnum = Starter+Num);
     Round++;
     return Finalnum;
 }
 
-unsigned long int Plustest (unsigned long int N)
+long long int Plustest (long long int N)
 {
     (Finalnumtest = taws+N);
     Round++;
     return Finalnumtest;
 }
 
-unsigned long int main()
+long long int main()
 {
-    int N;
+    long N;
     printf("input Number : ");
     scanf("%u",&N); // รับ N
     Starter = N; // ทดตัวตั้งใน ฟังชัน plus
@@ -79,18 +79,23 @@ unsigned long int main()
     {
     //printf("Aws is %d\n", Aws);
     //printf("taws is %d\n", taws);
-        while ((taws != Aws)&&(Round<=1000)&&(N!=0))
+        while ((taws != Aws)&&(Round<=1000)&&(N!=0)&&(Aws<4294967295))
         {
             semifixaws=Aws; // aws
             //printf("semiAws is %d\n", semifixaws);
             Aws=Plustest(semifixaws); //นำตัวแปรกลับค่าไปบวก ใส่ aws เหมือนเดิน
-            taws = reverseII(Aws); //กลับค่าอีกรอบใส่ taws
-            printf("Aws is %u\n", Aws);
-            printf("taws is %u\n", taws);
+            taws = reverseII(Aws);//กลับค่าอีกรอบใส่ taws
+            //printf("Aws is %lli\n", Aws);
+            //printf("tws is %lli\n", taws);
             //printf("=================\n");
         }           // วน
+
+        if(Aws>4294967295)
+        {
+                    printf("No palindrom found");
+        }
     }
-    if ((Round >=1000)&&(N!=0))
+    if ((Round >=1000)&&(N!=0)&&(Aws>4294967295))
     {
         printf("No palindrom found");
     }
@@ -102,7 +107,7 @@ unsigned long int main()
             //printf("taws is %d\n", taws);
             //printf("round is %d\n",Round);
             //printf("\n");
-            printf("%u %u",Round, Aws);
+            printf("%lli %lli",Round, Aws);
         }
 
 
