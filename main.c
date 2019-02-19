@@ -3,7 +3,7 @@
 
 // by Nonthwat zaza @ECP1N Rmuit kkc
 // ReverseAndAddQ Homework code
-// 94% code
+// 95% code
 unsigned long int SwN=0,Starter=0,Finalnum=0,Num=0,Aws=0,taws=0,SwNtest=0,fixaws=0,semifixaws=0,Finalnumtest=0,SwNII=0,semitaws=0;
 unsigned long int Round=0;
 unsigned long int reverse(unsigned long int N)
@@ -66,10 +66,6 @@ unsigned long int main()
         if ((N<10)&&(N!=0))
     {
         printf("0 %d",N);
-        return 0;
-    }
-        if (N=0)
-    {
         return 0;
     }
 
