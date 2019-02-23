@@ -4,6 +4,8 @@
 // by Nonthwat zaza @ECP1N Rmuit kkc 20-22/2/2019
 // ReverseAndAddQ Homework code
 // 100% code final ver
+// source code นี้มีจุดประสงค์ให้ใช้เป็นแนวทางในการเขียนโค้ดเท่านั้น แนะนำว่าให้เขียนโค้ดด้วยตัวเองดีกว่า^-^ (ถึงไม่ได้เขียนเองทั้งหมด(ผมก็เหมือนกัน) ก็ไม่เป็นไร ขอให้เข้าใจหลักการของโค้ด เดียวก็จะเขียนได้เอง(ถ้าเขียนเองเวลาอธิบายโค้ดจะง่ายกว่ากันเยอะ^^)  ด้วยความปรารถนาดีจากNonthwat zaza 23/2/2019 11:12 PM
+
 long long int SwN=0,Starter=0,Finalnum=0,Num=0,Aws=0,taws=0,SwNtest=0,fixaws=0,semifixaws=0,Finalnumtest=0,SwNII=0,semitaws=0;
 long long int Round=0;
 long long int reverse(long long N)
